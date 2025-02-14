@@ -9,9 +9,9 @@ const Head = () => {
       <div className="flex  items-center justify-between">
         <h1 className="text-2xl font-bold">Lokesh</h1>
         <div className="flex flex-col gap-2 ">
-          <div className="relative bg-white p-2 rounded-full shadow-lg flex justify-center items-center w-12 h-12 ">
+          <div className="bg-white p-2 rounded-full shadow-lg flex justify-center items-center w-12 h-12 ">
             <a href="mailto:lokeshbhaskar28@gmail.com">
-            <MdOutlineEmail className="absolute" style={{ color: "#D14836" }} />
+            <MdOutlineEmail className="text-xl" style={{ color: "#D14836" }} />
             </a>
           </div>
           <div className="bg-white p-2 rounded-full shadow-lg flex justify-center items-center w-12 h-12 ">

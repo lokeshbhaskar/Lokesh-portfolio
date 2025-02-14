@@ -61,7 +61,7 @@ const Middle = () => {
   }, []);
 
   return (
-    <div className="w-[80vw] bg-[#F1F5F9] relative">
+    <div className="w-full md:w-[55vw] lg:w-[80vw] bg-[#F1F5F9] relative">
       {/* Navbar Fixed at the Center on Top of Middle (50vw) */}
       <div className="absolute top-2 left-[25vw] transform -translate-x-1/2 w-[40vw] flex justify-center bg-white shadow-md py-1 z-10 rounded-full ">
         <Navbar status={status} />
@@ -71,7 +71,7 @@ const Middle = () => {
         {/* Left Scrollable Container (50vw) */}
         <div
           id="left-container"
-          className="w-[60vw] h-[70vh] overflow-y-scroll p-6 bg-[#E2E8F0]"
+          className="w-full md:w-[70vw] lg:w-[60vw] h-[70vh] overflow-y-scroll p-6 bg-[#E2E8F0]"
         >
           <div ref={aboutRef}>
             <About />

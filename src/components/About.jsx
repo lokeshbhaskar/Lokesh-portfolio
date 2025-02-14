@@ -11,42 +11,60 @@ const About = () => {
     <div className="h-[70vh] flex flex-col">
       <div id="about">
         <div>
-          <div className="flex items-center md:gap-4 lg:gap-6 ">
+          <div className="flex items-center p-10 md:gap-2 lg:gap-6 ">
             <img
               src={"./lokesh.jpg"}
               alt=""
-              className=" md:w-[35px] lg:w-[45px] rounded-full mt-8 "
+              className="w-[45px] lg:w-[45px] rounded-full  lg:mt-8 "
             />
-            <h1 className="text-black font-semibold mt-8 ">Developer..</h1>
+            <h1 className="text-black font-semibold md:text-3xl lg:text-xl lg:mt-8">
+              Developer..
+            </h1>
           </div>
-          <p className="p-4 md:p-0 text-sm mt-4 font-semibold">
+          <p className="p-4  lg:p-0 lg:text-sm md:mt-0 lg:mt-4 font-semibold">
             Hi, I'm Lokesh, a frontend developer passionate about building
-            interactive and responsive websites. I specialize in
-            React.js, Tailwind CSS, Framer motion and GSAP for animations, focusing on
+            interactive and responsive websites. I specialize in React.js,
+            Tailwind CSS, Framer motion and GSAP for animations, focusing on
             creating smooth user experiences.
           </p>
-          <div className="md:flex gap-3 px-4 mt-12 grid grid-cols-3  ">
-            <div className="relative bg-white p-3 rounded-full shadow-lg flex items-center justify-center w-16 md:w-20 lg:w-13 h-16 md:h-20 lg:h-13 "  >
+          <div className="lg:flex gap-3 md:gap-2  px-4 lg:mt-12 grid grid-cols-3  ">
+            <div className="relative bg-white p-3 rounded-full shadow-lg flex items-center justify-center w-16 h-16  md:w-12 md:h-12 lg:w-13  lg:h-13 ">
               <IoLogoJavascript
-              className="absolute"
+                className="absolute"
                 style={{ color: "yellow", backgroundColor: "black" }}
-                 size={25}
+                size={25}
               />
             </div>
-            <div className="relative bg-white p-3 rounded-full shadow-lg flex items-center justify-center w-16 md:w-20 lg:w-13 h-16 md:h-20 lg:h-13 ">
-              <FaReact className="absolute" style={{ color: "#00FFFF" }} size={25} />
+            <div className="relative bg-white p-3 rounded-full shadow-lg flex items-center justify-center w-16 h-16 md:w-12 md:h-12 lg:w-13  lg:h-13 ">
+              <FaReact
+                className="absolute"
+                style={{ color: "#00FFFF" }}
+                size={25}
+              />
             </div>
-            <div className="relative bg-white p-3 rounded-full shadow-lg flex items-center justify-center w-16 md:w-20 lg:w-13 h-16 md:h-20 lg:h-13">
-              <RiTailwindCssFill className="absolute" style={{ color: "#00BCFF" }} size={25} />
+            <div className="relative bg-white p-3 rounded-full shadow-lg flex items-center justify-center w-16 h-16 md:w-12 md:h-12 lg:w-13  lg:h-13">
+              <RiTailwindCssFill
+                className="absolute"
+                style={{ color: "#00BCFF" }}
+                size={25}
+              />
             </div>
-            <div className="relative bg-white p-3 rounded-full shadow-lg flex items-center justify-center w-16 md:w-20 lg:w-13 h-16 md:h-20 lg:h-13">
+            <div className="relative bg-white p-3 rounded-full shadow-lg flex items-center justify-center w-16 h-16 md:w-12 md:h-12 lg:w-13  lg:h-13">
               <FaGithub size={25} className="absolute" />
             </div>
-            <div className="relative  bg-white p-3 rounded-full shadow-lg flex items-center justify-center w-16 md:w-12 lg:w-13 h-16 md:h-13 lg:h-13">
-              <FaHtml5 className="absolute" size={25} style={{ color: "orange" }} />
+            <div className="relative  bg-white p-3 rounded-full shadow-lg flex items-center justify-center w-16 h-16 md:w-12 md:h-12 lg:w-13  lg:h-13">
+              <FaHtml5
+                className="absolute"
+                size={25}
+                style={{ color: "orange" }}
+              />
             </div>
-            <div className="relative bg-white p-3 rounded-full shadow-lg flex items-center justify-center w-16 md:w-20 lg:w-13 h-16 md:h-20 lg:h-13">
-              <FaCss3 className="absolute" style={{ color: "blue" }} size={25} />
+            <div className="relative bg-white p-3 rounded-full shadow-lg flex items-center justify-center w-16 h-16 md:w-12 md:h-12 lg:w-13  lg:h-13">
+              <FaCss3
+                className="absolute"
+                style={{ color: "blue" }}
+                size={25}
+              />
             </div>
           </div>
         </div>

@@ -5,22 +5,22 @@ import { FaLinkedin } from "react-icons/fa6";
 
 const Left = () => {
   return (
-    <div className=" w-[20vw]  bg-[#E2E8F0]  rounded-md px-2  ">
-      <div className="flex justify-evenly items-center   ">
+    <div className="w-full md:w-[25vw] lg:w-[20vw] bg-[#E2E8F0]  rounded-md px-2  ">
+      <div className="flex justify-evenly items-center gap-1  ">
         <img
           src="https://wallpapers.com/images/hd/best-profile-pictures-xrona5c4apl7qvrj.jpg"
           alt="profile"
-          className="w-30  mt-4 object-contain rounded-xl "
+          className="w-24 md:w-20 lg:w-28 mt-4 object-contain rounded-xl "
         />
-        <div className="flex flex-col gap-3">
-          <div className="bg-white p-2 rounded-full shadow-lg flex justify-center  ">
-            <FaInstagram className="text-xl bg-gradient-to-r from-[#feda75] via-[#d62976] to-[#4f5bd5] rounded-md cursor-pointer " />
+        <div className="flex flex-col md:gap-1 lg:gap-2 md:mt-1">
+          <div className="bg-white md:p-3 lg:p-2 rounded-full shadow-lg flex justify-center  ">
+            <FaInstagram className="md:text-sm lg:text-xl bg-gradient-to-r from-[#feda75] via-[#d62976] to-[#4f5bd5] rounded-md cursor-pointer" />
           </div>
-          <div className="bg-white p-2 rounded-full shadow-lg flex justify-center">
-            <FaGithub className="text-xl rounded-3xl text-white bg-black cursor-pointer" />
+          <div className="bg-white md:p-3 lg:p-2 rounded-full shadow-lg flex justify-center">
+            <FaGithub className="md:text-sm lg:text-xl rounded-3xl text-white bg-black cursor-pointer" />
           </div>
-          <div className="bg-white p-2 rounded-full shadow-lg flex justify-center">
-            <FaLinkedin className="text-xl bg-white text-[#0A66C2] cursor-pointer rounded-sm " />
+          <div className="bg-white md:p-3 lg:p-2 rounded-full shadow-lg flex justify-center">
+            <FaLinkedin className=" md:text-sm lg:text-xl bg-white text-[#0A66C2] cursor-pointer rounded-sm " />
           </div>
         </div>
       </div>
@@ -52,7 +52,7 @@ const Left = () => {
           </h1>
           <h1 className="text-[13px] text-black font-semibold ">
             {" "}
-            MP College, Siwan{" "}
+          Siwan{" "}
           </h1>
         </div>
         <div>

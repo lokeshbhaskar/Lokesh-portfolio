@@ -8,18 +8,18 @@ import Layout1 from "./components/Layout1";
 import Layout2 from "./components/Layout2";
 function App() {
    
-  const [isMobile,setIsMobile] = useState(window.innerWidth <= 768);
+  // const [isMobile,setIsMobile] = useState(window.innerWidth <= 768);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setIsMobile(window.innerWidth <= 768);
+  //   };
 
-    window.addEventListener("resize", handleResize);
+  //   window.addEventListener("resize", handleResize);
     
-    // Cleanup function
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  //   // Cleanup function
+  //   return () => window.removeEventListener("resize", handleResize);
+  // }, []);
 
   return (
     // <div
@@ -75,9 +75,19 @@ function App() {
     //   )}
     // </div>
     <>
-     {
+     {/* {
       isMobile ? <Layout2/> :  <Layout1 /> 
-     }
+     } */}
+
+    <div className="block md:hidden">
+        <Layout2 /> {/* Mobile Layout (Below 768px) */}
+    </div>
+    <div className="hidden md:block lg:hidden">
+        <Layout1 /> {/* Tablet Layout (768px - 1024px) */}
+      </div>
+    <div className="hidden lg:block">
+        <Layout1 /> {/* Desktop Layout (Above 1024px) */}
+      </div>
     </>
      
   );
