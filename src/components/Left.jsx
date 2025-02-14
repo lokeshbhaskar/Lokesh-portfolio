@@ -7,11 +7,11 @@ const Left = () => {
   return (
     <div className=" w-[20vw]  bg-[#E2E8F0]  rounded-md px-2  ">
       <div className="flex justify-evenly items-center   ">
-        <img
+        {/* <img
           src="https://wallpapers.com/images/hd/best-profile-pictures-xrona5c4apl7qvrj.jpg"
           alt="profile"
           className="w-30  mt-4 object-contain rounded-xl "
-        />
+        /> */}
         <div className="flex flex-col gap-3">
           <div className="bg-white p-2 rounded-full shadow-lg flex justify-center  ">
             <FaInstagram className="text-xl bg-gradient-to-r from-[#feda75] via-[#d62976] to-[#4f5bd5] rounded-md cursor-pointer " />
