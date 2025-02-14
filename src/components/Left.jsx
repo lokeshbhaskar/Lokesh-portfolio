@@ -14,13 +14,20 @@ const Left = () => {
         />
         <div className="flex flex-col md:gap-1 lg:gap-2 md:mt-1">
           <div className="bg-white md:p-3 lg:p-2 rounded-full shadow-lg flex justify-center  ">
-            <FaInstagram className="md:text-sm lg:text-xl bg-gradient-to-r from-[#feda75] via-[#d62976] to-[#4f5bd5] rounded-md cursor-pointer" />
+            <a href="http://www.instagram.com/lokesh_01________/">
+              <FaInstagram className="md:text-sm lg:text-xl bg-gradient-to-r from-[#feda75] via-[#d62976] to-[#4f5bd5] rounded-md cursor-pointer" />
+            </a>
+          </div>
+
+          <div className="bg-white md:p-3 lg:p-2 rounded-full shadow-lg flex justify-center">
+            <a href="https://github.com/lokeshbhaskar">
+              <FaGithub className="md:text-sm lg:text-xl rounded-3xl text-white bg-black cursor-pointer" />
+            </a>
           </div>
           <div className="bg-white md:p-3 lg:p-2 rounded-full shadow-lg flex justify-center">
-            <FaGithub className="md:text-sm lg:text-xl rounded-3xl text-white bg-black cursor-pointer" />
-          </div>
-          <div className="bg-white md:p-3 lg:p-2 rounded-full shadow-lg flex justify-center">
-            <FaLinkedin className=" md:text-sm lg:text-xl bg-white text-[#0A66C2] cursor-pointer rounded-sm " />
+            <a href="https://www.linkedin.com/in/lokesh-kumar-3369a8219/">
+              <FaLinkedin className=" md:text-sm lg:text-xl bg-white text-[#0A66C2] cursor-pointer rounded-sm " />
+            </a>
           </div>
         </div>
       </div>
@@ -50,10 +57,7 @@ const Left = () => {
           <h1 className="text-black text-[13px] font-semibold ">
             Intermediate
           </h1>
-          <h1 className="text-[13px] text-black font-semibold ">
-            {" "}
-          Siwan{" "}
-          </h1>
+          <h1 className="text-[13px] text-black font-semibold "> Siwan </h1>
         </div>
         <div>
           <p className="text-sm font-bold text-black ">78%</p>
