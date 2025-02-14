@@ -15,7 +15,7 @@ const About = () => {
             <img
               src={"./lokesh.jpg"}
               alt=""
-              className="w-[45px] rounded-full mt-8 "
+              className=" md:w-[40px] lg:w-[45px] rounded-full mt-8 "
             />
             <h1 className="text-black font-semibold mt-8 ">Developer..</h1>
           </div>
@@ -42,7 +42,7 @@ const About = () => {
             <div className="relative bg-white p-3 rounded-full shadow-lg flex items-center justify-center w-16 md:w-20 lg:w-13 h-16 md:h-20 lg:h-13">
               <FaGithub size={25} className="absolute" />
             </div>
-            <div className="relative  bg-white p-3 rounded-full shadow-lg flex items-center justify-center w-16 md:w-20 lg:w-13 h-16 md:h-20 lg:h-13">
+            <div className="relative  bg-white p-3 rounded-full shadow-lg flex items-center justify-center w-16 md:w-12 lg:w-13 h-16 md:h-13 lg:h-13">
               <FaHtml5 className="absolute" size={25} style={{ color: "orange" }} />
             </div>
             <div className="relative bg-white p-3 rounded-full shadow-lg flex items-center justify-center w-16 md:w-20 lg:w-13 h-16 md:h-20 lg:h-13">
