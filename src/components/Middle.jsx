@@ -16,62 +16,72 @@ const Middle = () => {
   const projectRef = useRef(null);
   const skillsRef = useRef(null);
 
+  
   useEffect(() => {
+    const scrollContainer = document.getElementById("left-container");
+
     const handleScroll = () => {
-      const scrollY = document.getElementById("left-container").scrollTop;
-      const aboutHeight = window.innerHeight * 0.7; // 70vh
-      const projectHeight = window.innerHeight * 0.7; // 70vh
-      const skillHeight = window.innerHeight * 0.6; // 60vh
+      if (!scrollContainer) return;
+
+      const scrollY = scrollContainer.scrollTop; // Always track left-container scroll
+      console.log("ScrollY:", scrollY, "Screen Width:", window.innerWidth);
+
+      const aboutHeight = window.innerHeight * 0.7;
+      const projectHeight = window.innerHeight * 0.7;
+      const skillHeight = window.innerHeight * 0.6;
 
       if (scrollY < aboutHeight) {
-        setBgColor("bg-[#E2E8F0]"); // About section color
-        setBgColor2("bg-white"); // Reset Project color
-        setBgColor3("bg-white"); // Reset Footer color
+        setBgColor("bg-[#E2E8F0]");
+        setBgColor2("bg-white");
+        setBgColor3("bg-white");
         setStatus("About");
-      } else if (
-        scrollY >= aboutHeight &&
-        scrollY < aboutHeight + projectHeight
-      ) {
-        setBgColor("bg-white"); // Reset About color
-        setBgColor2("bg-[#E2E8F0]"); // Project section color
-        setBgColor3("bg-white"); // Reset Footer color
+      } else if (scrollY >= aboutHeight && scrollY < aboutHeight + projectHeight) {
+        setBgColor("bg-white");
+        setBgColor2("bg-[#E2E8F0]");
+        setBgColor3("bg-white");
         setStatus("Project");
-      } else if (
-        scrollY >= aboutHeight &&
-        scrollY < aboutHeight + projectHeight + skillHeight
-      ) {
-        setBgColor("bg-white"); // Reset About color
-        setBgColor2("bg-white"); // Reset Project color
-        setBgColor3("bg-[#E2E8F0]"); // Footer section color
+      } else if (scrollY >= aboutHeight + projectHeight && scrollY < aboutHeight + projectHeight + skillHeight) {
+        setBgColor("bg-white");
+        setBgColor2("bg-white");
+        setBgColor3("bg-[#E2E8F0]");
         setStatus("Skills");
       } else {
-        setBgColor("bg-white"); // Reset About color
-        setBgColor2("bg-white"); // Reset Project color
+        setBgColor("bg-white");
+        setBgColor2("bg-white");
         setStatus("Footer");
       }
     };
 
-    document
-      .getElementById("left-container")
-      .addEventListener("scroll", handleScroll);
-    return () =>
-      document
-        .getElementById("left-container")
-        .removeEventListener("scroll", handleScroll);
+    const handleResize = () => {
+      handleScroll(); // Recalculate on resize
+    };
+
+    if (scrollContainer) {
+      scrollContainer.addEventListener("scroll", handleScroll);
+    }
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      if (scrollContainer) {
+        scrollContainer.removeEventListener("scroll", handleScroll);
+      }
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return (
     <div className="w-full md:w-[55vw] lg:w-[80vw] bg-[#F1F5F9] relative">
       {/* Navbar Fixed at the Center on Top of Middle (50vw) */}
-      <div className="absolute top-2 left-[25vw] transform -translate-x-1/2 w-[40vw] flex justify-center bg-white shadow-md py-1 z-10 rounded-full ">
+      <div className="absolute top-2 left-[25vw] transform -translate-x-1/2 w-[40vw] flex justify-center bg-white shadow-md py-1 z-10 rounded-full">
         <Navbar status={status} />
+        {console.log(status)}
       </div>
 
       <div className="flex gap-4 mt-16">
         {/* Left Scrollable Container (50vw) */}
         <div
           id="left-container"
-          className="w-full md:w-[70vw] lg:w-[60vw] h-[70vh] overflow-y-scroll p-6 bg-[#E2E8F0]"
+          className="w-[70vw] md:w-[70vw] lg:w-[60vw] h-[70vh] overflow-y-scroll p-6 bg-[#E2E8F0]"
         >
           <div ref={aboutRef}>
             <About />
