@@ -8,11 +8,11 @@ import Layout1 from "./components/Layout1";
 import Layout2 from "./components/Layout2";
 function App() {
    
-  const [isMobile,setIsMobile] = useState(window.innerWidth < 768);
+  const [isMobile,setIsMobile] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth <= 768);
     };
 
     window.addEventListener("resize", handleResize);
@@ -79,6 +79,7 @@ function App() {
       isMobile ? <Layout2/> :  <Layout1 /> 
      }
     </>
+     
   );
 }
 
