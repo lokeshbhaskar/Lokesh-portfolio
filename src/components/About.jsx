@@ -11,11 +11,11 @@ const About = () => {
     <div className="h-[70vh] flex flex-col">
       <div id="about">
         <div>
-          <div className="flex items-center gap-6 ">
+          <div className="flex items-center md:gap-4 lg:gap-6 ">
             <img
               src={"./lokesh.jpg"}
               alt=""
-              className=" md:w-[40px] lg:w-[45px] rounded-full mt-8 "
+              className=" md:w-[35px] lg:w-[45px] rounded-full mt-8 "
             />
             <h1 className="text-black font-semibold mt-8 ">Developer..</h1>
           </div>
@@ -25,7 +25,7 @@ const About = () => {
             React.js, Tailwind CSS, Framer motion and GSAP for animations, focusing on
             creating smooth user experiences.
           </p>
-          <div className="md:flex gap-3 px-4 mt-10 grid grid-cols-3  ">
+          <div className="md:flex gap-3 px-4 mt-12 grid grid-cols-3  ">
             <div className="relative bg-white p-3 rounded-full shadow-lg flex items-center justify-center w-16 md:w-20 lg:w-13 h-16 md:h-20 lg:h-13 "  >
               <IoLogoJavascript
               className="absolute"
