@@ -24,7 +24,7 @@ const Middle = () => {
       if (!scrollContainer) return;
 
       const scrollY = scrollContainer.scrollTop; // Always track left-container scroll
-      console.log("ScrollY:", scrollY, "Screen Width:", window.innerWidth);
+      // console.log("ScrollY:", scrollY, "Screen Width:", window.innerWidth);
 
       const aboutHeight = window.innerHeight * 0.7;
       const projectHeight = window.innerHeight * 0.7;
@@ -74,7 +74,7 @@ const Middle = () => {
       {/* Navbar Fixed at the Center on Top of Middle (50vw) */}
       <div className="absolute top-2 left-[25vw] transform -translate-x-1/2 w-[40vw] flex justify-center bg-white shadow-md py-1 z-10 rounded-full">
         <Navbar status={status} />
-        {console.log(status)}
+        {/* {console.log(status)} */}
       </div>
 
       <div className="flex gap-4 mt-16">

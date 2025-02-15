@@ -1,10 +1,11 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Project = () => {
   return (
     <div className="flex  flex-col gap-5 h-[70vh] mt-24 md:mt-0">
       <h1 className="md:hidden text-2xl text-center font-medium mt-5" >Projects</h1>
-      <div className="flex flex-col bg-white shadow-2xl p-4 rounded-lg md:mt-12 ">
+      <div className="flex flex-col bg-white shadow-2xl p-4 rounded-lg md:mt-2 lg:mt-16 ">
         <h1 className="text-xl font-semibold">
           Resume Analyzer{" "}
           <a
@@ -14,7 +15,7 @@ const Project = () => {
             (check)
           </a>
         </h1>
-        <p className="text-sm font-medium">
+        <p className="text-sm font-medium tracking-wider ">
           Developed an ATS-powered Resume Analyzer that evaluates resumes based
           on job-specific criteria, providing an ATS score and detailed feedback
         </p>
@@ -29,7 +30,7 @@ const Project = () => {
             (check)
           </a>
         </h1>
-        <p className="text-sm font-medium">
+        <p className="text-sm font-medium tracking-wider">
           Developed an interactive Apple 3D website using React, GSAP, and
           Three.js to create smooth animations and immersive user experiences.
           Implemented dynamic scrolling, 3D object interactions, and responsive

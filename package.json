@@ -13,6 +13,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@next/font": "^14.2.15",
     "@tailwindcss/vite": "^4.0.6",
     "motion": "^12.4.2",
     "react": "^19.0.0",
