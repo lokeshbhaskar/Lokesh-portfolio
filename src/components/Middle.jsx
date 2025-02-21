@@ -16,11 +16,10 @@ const Middle = () => {
   const projectRef = useRef(null);
   const skillsRef = useRef(null);
 
-  
   useEffect(() => {
     const scrollContainer = document.getElementById("left-container");
 
-    const handleScroll = () => {
+    const handleScroll = () => {   
       if (!scrollContainer) return;
 
       const scrollY = scrollContainer.scrollTop; // Always track left-container scroll
