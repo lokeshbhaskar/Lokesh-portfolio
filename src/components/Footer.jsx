@@ -20,7 +20,7 @@ const Footer = () => {
           transition={{ type: "tween", duration: 1, ease: "easeInOut" }}
         >
           Alternatively, here's a fancy sheet of paper.{" "}
-          <a href="./Lokesh-new.pdf" target="_blank" className="text-pink-400">
+          <a href="./Lokesh_k.pdf" target="_blank" className="text-pink-400">
             Resume
           </a>
         </motion.h1>
